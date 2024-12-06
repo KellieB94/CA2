@@ -8,6 +8,8 @@ package ca2;
  *
  * @author ismis
  */
+//importing the Scanner Class to add Scanner object 
+import java.util.Scanner;
 public class CA2 {
 
     /**
@@ -15,6 +17,9 @@ public class CA2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //initializing the Scanner Class with an object "input" to use the Scanner Class function 
+        Scanner input = new Scanner(System.in);
+        
     }
     
 }
