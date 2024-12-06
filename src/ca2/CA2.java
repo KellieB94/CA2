@@ -133,6 +133,24 @@ public class CA2 {
                 square[a][b] = input.nextInt();
             }
         }
+        
+        //displaying the matrix in 2D form 
+        
+        for(int a = 0; a < row; a++){
+            for(int b = 0; b < cols; b++){
+                System.out.print(square[a][b] + "");
+            }
+         System.out.println("");
     }
+         //variables to store the sum of diagonals 
+         int primarySum = 0;
+         int secondarySum = 0;
     
+         //diagonal-sum calculation 
+         for(int a = 0; a < row; a++){
+             primarySum += square[a][a];
+             secondarySum += square[a][cols - a - 1];
+         }
 }
+}
+    
