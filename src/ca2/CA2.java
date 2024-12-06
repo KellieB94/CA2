@@ -90,7 +90,7 @@ public class CA2 {
             //}
         //}
         //displaying the multiplication table in the form of a matrix,
-        //using two nested for-loops, one going through the outer-loop and one going through the inner-loop,
+        //using two nested for-loops, one runs through the outer-loop and the other runs through the inner-loop,
         //to ensure a neat format 
         //System.out.println("Multiplication Table: ");
         //for(int b = 0; b < a; b++){
@@ -129,18 +129,26 @@ public class CA2 {
         //prompting the user to enter row by row elements 
         System.out.println("Enter elements: ");
         
+        //initialization of two nested for-loops to allow user to enter elements one by one,
+        //one runs through the outer-loop and the other runs through the inner-loop
         for(int a = 0; a < row; a++){
             for(int b = 0; b < cols; b++){
+                
+                //variable to store the elements inputted by user 
                 square[a][b] = input.nextInt();
             }
         }
         
-        //displaying the matrix in 2D form 
-        
+        //display of the matrix in 2D form 
+        //initialization of two nested for-loops to display the matrix table 
         for(int a = 0; a < row; a++){
             for(int b = 0; b < cols; b++){
+                
+                //print-statement to show the table in a readable size for blind people like me ;)
                 System.out.printf("%5d", square[a][b]);
             }
+            
+            //function to print a new line every row, for easier reading 
          System.out.println("");
     }
          //variables to store the sum of diagonals 
