@@ -36,25 +36,27 @@ public class CA2 {
         }
         
         //boolean to find the first-repeated element in the array 
-        boolean notFound = true;
+        boolean Found = false;
         
         //Array Traversal to scan through each array element to find the first-repeated element 
         for(int a = 0; a < size; a++){
-            for(int b = 0; b < size; b++){
+            for(int b = a + 1; b < size; b++){
                 if(ray[a] == ray[b]){
                     System.out.println("The first repeated element is: " + ray[a]);
-                    notFound = false;
+                    Found = true;
                     break; 
                 }
             }
-            if(notFound){
+            if(Found){
                 break;
             }
         }
         //print-statement if it occurs that no repeated-element is found
-        if(!notFound) {
+        if(!Found) {
             System.out.println("No repeat-elements found!");
         }
+        //closing the Scanner class to prevent errors and more user input 
+        input.close();
     }
     
 }
