@@ -81,7 +81,8 @@ public class CA2 {
         //initializing 2D array to store the values of the multiplication 
         int[][] mulTable = new int[a][a];
        
-        //populating the multiplication table by adding values 
+        //populating the multiplication table by adding values, using two nested for-loops, 
+        //one going through the outer-loop and one going through the inner-loop to give the multiplication products 
         for(int b = 0; b < a; b++){
             for(int c = 0; c < a; c++){
                 mulTable[b][c] = (b + 1) * (c + 1);
@@ -89,13 +90,14 @@ public class CA2 {
         }
         //displaying the multiplication table in the form of a matrix,
         //using two nested for-loops, one going through the outer-loop and one going through the inner-loop,
-        //to fill the array with the multiplication products 
+        //to ensure a neat format 
         System.out.println("Multiplication Table: ");
         for(int b = 0; b < a; b++){
             for(int c = 0; c < a; c++){
                 //printing each element in a size 3 alignment to make the table easier to read 
-                System.out.printf("%3d", mulTable[b][c]);
+                System.out.printf("%5d", mulTable[b][c]);
             }
+            //function to print a new line after every row 
             System.out.println();
         }
         //closing the Scanner class to stop user input capability 
