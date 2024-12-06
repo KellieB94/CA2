@@ -192,9 +192,31 @@ public class CA2 {
             }
             up++;
             
+            //two nested-loops, while and for to traverse the right column
+            for (int a = up; a <= down; a++) {
+                System.out.print(square[a][right] + " ");
+            }
+            right--;
+
+            //two nested-loops, while and for to traverse the bottom row 
+            if (up <= down) {
+                for (int a = right; a >= left; a--) {
+                    System.out.print(square[down][a] + " ");
+                }
+                down--;
+            }
+
+            //two nested loops, while and for to traverse the left column 
+            if (left <= right) {
+                for (int a = down; a >= up; a--) {
+                    System.out.print(square[a][left] + " ");
+                }
+                left++;
             
          
 
-}
+               }
+             }
+         }
 }
     
