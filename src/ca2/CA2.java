@@ -322,14 +322,27 @@ public class CA2 {
         ////Declaration of the array and elements acception 
         int[] ray = new int[size];
         
-        ////print-statement that outputs the size 
+        ////print-statement that outputs the size, using for-loop,
+        ////to allow user to enter each element 
         System.out.println("Enter " + size + " elements:");
         for (int i = 0; i < size; i++) {
             ray[i] = input.nextInt();
         }
+         ////print-statement to show array display before sorting 
+        System.out.println("Array before sorting: ");
+        Rayprint(ray);
+
+        //Bubble Sort activation 
+        SortBub(ray);
+
+        ////print-statement to show array display after sorting
+        System.out.println("Array after sorting:");
+        Rayprint(ray);
+
+        //closing the scanner class to prevent errors and more user input 
+        input.close();
+    }
+}
              
              
-             
-             
-         }
-      }
+           
