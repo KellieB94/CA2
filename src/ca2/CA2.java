@@ -121,6 +121,18 @@ public class CA2 {
         
         //variable to store the number of columns 
         int cols = input.nextInt();
+        
+        //initializing the matrix 
+        int[][] square = new int [row][cols];
+        
+        //prompting the user to enter row by row elements 
+        System.out.println("Enter elements: ");
+        
+        for(int a = 0; a < row; a++){
+            for(int b = 0; b < cols; b++){
+                square[a][b] = input.nextInt();
+            }
+        }
     }
     
 }
