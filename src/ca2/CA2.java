@@ -95,6 +95,7 @@ public class CA2 {
         //System.out.println("Multiplication Table: ");
         //for(int b = 0; b < a; b++){
             //for(int c = 0; c < a; c++){
+            
                 //printing each element in a size 3 alignment to make the table easier to read 
                 //System.out.printf("%5d", mulTable[b][c]);
             //}
@@ -138,7 +139,7 @@ public class CA2 {
         
         for(int a = 0; a < row; a++){
             for(int b = 0; b < cols; b++){
-                System.out.print(square[a][b] + "");
+                System.out.printf("%5d", square[a][b]);
             }
          System.out.println("");
     }
@@ -152,8 +153,8 @@ public class CA2 {
              secondarySum += square[a][cols - a - 1];
          }
          //output 
-         System.out.println("Main diagonal sum: ");
-         System.out.println("Secondary diagonal sum: ");
+         System.out.println("Main diagonal sum: " + primarySum);
+         System.out.println("Secondary diagonal sum: " + secondarySum);
 }
 }
     
