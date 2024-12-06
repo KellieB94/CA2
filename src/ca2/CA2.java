@@ -81,7 +81,21 @@ public class CA2 {
         int[][] mulTable = new int[a][a];
        
         //populating the multiplication table by adding values 
-       
+        for(int b = 0; b < a; b++){
+            for(int c = 0; c < a; c++){
+                mulTable[b][c] = (b + 1) * (c + 1);
+            }
+        }
+        //displaying the multiplication table in the form of a matrix 
+        System.out.println("Multiplication Table: ");
+        for(int b = 0; b < a; b++){
+            for(int c = 0; c < a; c++){
+                //printing each element 
+                System.out.printf("%4d", mulTable[b][c]);
+            }
+            System.out.println();
+        }
+        input.close();
     }
     
 }
