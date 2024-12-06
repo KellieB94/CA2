@@ -298,7 +298,13 @@ public class CA2 {
         System.out.println("Total number of swaps: " + b);
     }
            
-           
+        //function for printing the array using a for-loop
+        public static void Rayprint(int[] ray) {
+        for (int i : ray) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
            
         public static void main(String[] args) {
              
