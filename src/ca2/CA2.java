@@ -185,20 +185,20 @@ public class CA2 {
              int up = 0, left = 0;
              int down = row - 1, right = col -1;
              
-            //two nested-loops, while and for to traverse the top row 
+            //two nested-loops, while and for to traverse the top row from left to right 
              while(up <= down && left <= right) {
             for (int a = left; a <= right; a++) {
                 System.out.print(square[up][a] + " ");
             }
             up++;
             
-            //two nested-loops, while and for to traverse the right column
+            //two nested-loops, while and for to traverse the right column from top to bottom 
             for (int a = up; a <= down; a++) {
                 System.out.print(square[a][right] + " ");
             }
             right--;
 
-            //two nested-loops, while and for to traverse the bottom row 
+            //two nested-loops, while and for to traverse the bottom row from right to left
             if (up <= down) {
                 for (int a = right; a >= left; a--) {
                     System.out.print(square[down][a] + " ");
@@ -206,7 +206,7 @@ public class CA2 {
                 down--;
             }
 
-            //two nested loops, while and for to traverse the left column 
+            //two nested loops, while and for, with an if statement to traverse the left column from bottom to top
             if (left <= right) {
                 for (int a = down; a >= up; a--) {
                     System.out.print(square[a][left] + " ");
@@ -217,27 +217,38 @@ public class CA2 {
          }
          
         public static void main(String[] args) {
+            
         //calling the scanner class, using the object "input" to take user input
         Scanner input = new Scanner(System.in);
 
         //Prompting the user to enter the number of rows and columns, accepting the dimensions of the matrix
         System.out.print("Enter number of rows: ");
+        
+        //variable to store the number of rows 
         int row = input.nextInt();
         System.out.print("Enter number of columns: ");
+        
+        //variable to store the number of columns
         int col = input.nextInt();
         
         //Matrix elements initialization 
         int[][] square = new int [row][col];
+        
+        //prompting the user to input the matrix-elements 
         System.out.println("Enter matrix elements: ");
         
+        //two nested for-loops to print the matrix-elements, one by one
         for(int a = 0; a < row; a++){
             for(int b = 0; b < col; b++){
+                
+                //variable to store the matrix elements 
                 square[a][b] = input.nextInt();
             }
         }
         
-        //displaying the traversal of the matrix in spiral-order
+        //displaying the traversal of the matrix in spiral-order with a print-statement 
         System.out.println("Traversal of Spiral-Order: ");
+        
         matrixSpiral(square, row, col);
         }
 }
