@@ -67,41 +67,60 @@ public class CA2 {
         //closing the Scanner class to prevent errors and stop more user input 
         //input.close();
         
+        
         //TASK 2 - function that generates a multiplication table using a 2D array 
         
         //calling the Scanner class to take user input by initializing the Scanner object "input"
-        Scanner input = new Scanner(System.in);
+        //Scanner input = new Scanner(System.in);
         
         //prompting the user to enter the multiplication table size 
-        System.out.println("Enter the number of rows and columns in table (Example: 5x5/NxN): ");
+        //System.out.println("Enter the number of rows and columns in table (Example: 5x5/NxN): ");
         
         //variable to store the table size 
-        int a = input.nextInt();
+        //int a = input.nextInt();
         
         //initializing 2D array to store the values of the multiplication 
-        int[][] mulTable = new int[a][a];
+        //int[][] mulTable = new int[a][a];
        
         //populating the multiplication table by adding values, using two nested for-loops, 
         //one going through the outer-loop and one going through the inner-loop to give the multiplication products 
-        for(int b = 0; b < a; b++){
-            for(int c = 0; c < a; c++){
-                mulTable[b][c] = (b + 1) * (c + 1);
-            }
-        }
+        //for(int b = 0; b < a; b++){
+            //for(int c = 0; c < a; c++){
+                //mulTable[b][c] = (b + 1) * (c + 1);
+            //}
+        //}
         //displaying the multiplication table in the form of a matrix,
         //using two nested for-loops, one going through the outer-loop and one going through the inner-loop,
         //to ensure a neat format 
-        System.out.println("Multiplication Table: ");
-        for(int b = 0; b < a; b++){
-            for(int c = 0; c < a; c++){
+        //System.out.println("Multiplication Table: ");
+        //for(int b = 0; b < a; b++){
+            //for(int c = 0; c < a; c++){
                 //printing each element in a size 3 alignment to make the table easier to read 
-                System.out.printf("%5d", mulTable[b][c]);
-            }
-            //function to print a new line after every row 
-            System.out.println();
-        }
-        //closing the Scanner class to stop user input capability 
-        input.close();
+                //System.out.printf("%5d", mulTable[b][c]);
+            //}
+            //function to print a new line after every row, for easier reading 
+            //System.out.println();
+        //}
+        //closing the Scanner class to stop user input capability and to prevent any errors  
+        //input.close();
+        
+        
+        //TASK 3 - calculating the sum of the main-diagonal and the secondary-diagonal of a square matrix 
+        
+        //calling the scanner class by creating object "input" to take user input 
+        Scanner input = new Scanner(System.in);
+        
+        //prompting input from the user to give number of rows in the matrix 
+        System.out.println("Enter the number of rows: ");
+        
+        //variable to store the number of rows 
+        int row = input.nextInt();
+        
+        //prompting input from the user to give number of columns in the matrix 
+        System.out.println("Enter the number of columns: ");
+        
+        //variable to store the number of columns 
+        int cols = input.nextInt();
     }
     
 }
