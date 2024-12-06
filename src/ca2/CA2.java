@@ -15,7 +15,7 @@ public class CA2 {
     //GitHub Repo:
     //https://github.com/KellieB94/CA2.git
     
-    public static void main(String[] args) {
+    //public static void main(String[] args) {
     
         //TASK 1 - function to find the first-repeated element in an array of integers 
     
@@ -175,6 +175,19 @@ public class CA2 {
          //print-statement to output the main-diagonal and secondary diagonal-sum to the user 
          //System.out.println("Main diagonal sum: " + primarySum);
          //System.out.println("Secondary diagonal sum: " + secondarySum);
+         
+         //TASK 4 - traverse a spiral in matrix order 
+         
+         //traverse the matrix in a spiral-order function 
+         public static void matrixSpiral(int[][] square, int row, int col){
+             
+             //variables to initialize 4 boundaries to track the traversed spiral-edges 
+             int up = 0, left = 0;
+             int down = row - 1, right = col -1;
+             
+             
+         
+
 }
 }
     
