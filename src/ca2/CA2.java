@@ -236,6 +236,9 @@ public class CA2 {
             }
         }
         
+        //displaying the traversal of the matrix in spiral-order
+        System.out.println("Traversal of Spiral-Order: ");
+        matrixSpiral(square, row, col);
         }
 }
              
