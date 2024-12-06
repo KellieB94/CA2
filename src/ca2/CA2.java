@@ -185,7 +185,14 @@ public class CA2 {
              int up = 0, left = 0;
              int down = row - 1, right = col -1;
              
-             
+            //two nested-loops, while and for to traverse the top row 
+             while(up <= down && left <= right) {
+            for (int a = left; a <= right; a++) {
+                System.out.print(square[up][a] + " ");
+            }
+            up++;
+            
+            
          
 
 }
