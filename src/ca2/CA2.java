@@ -151,6 +151,8 @@ public class CA2 {
              primarySum += square[a][a];
              secondarySum += square[a][cols - a - 1];
          }
+         //output 
+         
 }
 }
     
