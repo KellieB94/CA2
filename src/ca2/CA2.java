@@ -276,6 +276,26 @@ public class CA2 {
            ////variable to count the amount of swaps 
            int b = 0;
            
+           ////two nested-loops to run through the array elements, the outer-loop is for the number of passes,
+           ////
+        for (int i = 0; i < a - 1; i++) {
+            // Inner loop for comparing adjacent elements
+            for (int j = 0; j < a - 1 - i; j++) {
+                // Compare and swap if elements are in wrong order
+                if (ray[j] > ray[j + 1]) {
+                    // Swap the elements
+                    int swap = ray[j];
+                    ray[j] = ray[j + 1];
+                    ray[j + 1] = swap;
+                    b++; // Increment the swap count
+                }
+            }
+        }
+
+        // Display total number of swaps
+        System.out.println("Total number of swaps: " + b);
+    }
+           
            
 
     
