@@ -15,9 +15,10 @@ public class CA2 {
     ////GitHub Repo:
     ////https://github.com/KellieB94/CA2.git
     
-    
+         
         ////TASK 1 - function to find the first-repeated element in an array of integers 
          
+         ////main function (method) that's driving the program 
          //public static void main(String[] args){
     
         ////initializing the Scanner Class to take user input with an object "input" to use the Scanner Class function 
@@ -78,6 +79,7 @@ public class CA2 {
         
         ////TASK 2 - function that generates a multiplication table using a 2D array 
          
+        ////main function (method) that's driving the program
         //public static void main(String[] args){
         
         ////calling the Scanner class to take user input by initializing the Scanner object "input"
@@ -126,6 +128,7 @@ public class CA2 {
         
         ////TASK 3 - calculating the sum of the main-diagonal and the secondary-diagonal of a square matrix 
          
+         ////main function (method) that's driving the program 
          //public static void main(String[] args) {
         
         ////calling the scanner class by creating object "input" to take user input 
@@ -227,6 +230,7 @@ public class CA2 {
              //}
          //}
          
+        ////main function (method) that's driving the program 
         //public static void main(String[] args) {
             
         ////calling the scanner class, using the object "input" to take user input
@@ -305,10 +309,24 @@ public class CA2 {
         }
         System.out.println();
     }
-           
+       ////main function (method) that's driving the program   
         public static void main(String[] args) {
              
-           
+        ////calling the scanner class with scanner object "input" to take input from the user 
+        Scanner input = new Scanner(System.in);
+
+        ////prompting user to enter the array size
+        System.out.print("Enter the size of the array: ");
+        int size = input.nextInt();
+
+        ////Declaration of the array and elements acception 
+        int[] ray = new int[size];
+        
+        ////print-statement that outputs the size 
+        System.out.println("Enter " + size + " elements:");
+        for (int i = 0; i < size; i++) {
+            ray[i] = input.nextInt();
+        }
              
              
              
