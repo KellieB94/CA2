@@ -21,7 +21,7 @@ public class CA2 {
         Scanner input = new Scanner(System.in);
         
         //prompting the user to give array size as input
-        System.out.print("Enter The Array Size: ");
+        System.out.print("Enter the array size: ");
         //variable to store the given array size 
         int size = input.nextInt();
         
@@ -30,12 +30,31 @@ public class CA2 {
         
         //prompting the user to give array elements as input using for loop 
         //the for loop enables the user to input more than one element 
-        System.out.println("Enter The Array Elements: ");
+        System.out.println("Enter the array elements: ");
         for(int a = 0; a < size; a++){
             ray[a] = input.nextInt();
         }
         
+        //boolean to find the first-repeated element in the array 
+        boolean notFound = true;
         
+        //Array Traversal to scan through each array element to find the first-repeated element 
+        for(int a = 0; a < size; a++){
+            for(int b = 0; b < size; b++){
+                if(ray[a] == ray[b]){
+                    System.out.println("The first repeated element is: " + ray[a]);
+                    notFound = false;
+                    break; 
+                }
+            }
+            if(notFound){
+                break;
+            }
+        }
+        //print-statement if it occurs that no repeated-element is found
+        if(!notFound) {
+            System.out.println("No repeat-elements found!");
+        }
     }
     
 }
