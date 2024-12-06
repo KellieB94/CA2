@@ -62,7 +62,7 @@ public class CA2 {
         if(!Found) {
             System.out.println("No repeat-elements found!");
         }
-        //closing the Scanner class to prevent errors and more user input 
+        //closing the Scanner class to prevent errors and stop more user input 
         input.close();
     }
     
