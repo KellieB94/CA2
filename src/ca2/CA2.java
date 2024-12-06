@@ -212,11 +212,20 @@ public class CA2 {
                     System.out.print(square[a][left] + " ");
                 }
                 left++;
-            
-         
-
                }
              }
          }
+         
+        public static void main(String[] args) {
+        //calling the scanner class, using the object "input" to take user input
+        Scanner input = new Scanner(System.in);
+
+        //Prompting the user to enter the number of rows and columns, accepting the dimensions of the matrix
+        System.out.print("Enter number of rows: ");
+        int row = input.nextInt();
+        System.out.print("Enter number of columns: ");
+        int col = input.nextInt();
+        
+        }
 }
-    
+             
