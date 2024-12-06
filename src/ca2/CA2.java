@@ -17,11 +17,13 @@ public class CA2 {
     
     //function to find the first-repeated element in an array of integers
     public static void main(String[] args) {
+        
         //initializing the Scanner Class with an object "input" to use the Scanner Class function 
         Scanner input = new Scanner(System.in);
         
         //prompting the user to give array size as input
         System.out.print("Enter the array size: ");
+        
         //variable to store the given array size 
         int size = input.nextInt();
         
@@ -38,15 +40,20 @@ public class CA2 {
         //boolean to find the first-repeated element in the array 
         boolean Found = false;
         
-        //Array Traversal to scan through each array element to find the first-repeated element 
+        //Array Traversal using two nested for-loops to scan through each array element to find the first-repeated element in the array
         for(int a = 0; a < size; a++){
             for(int b = a + 1; b < size; b++){
+                
+                //conditional if-statement to print to the user the first-repeated element
                 if(ray[a] == ray[b]){
                     System.out.println("The first repeated element is: " + ray[a]);
+                    
+                    //breaking the loop on the condition that first-repeated element is found 
                     Found = true;
                     break; 
                 }
             }
+            //breaking the loop if the first-repeated element is found
             if(Found){
                 break;
             }
