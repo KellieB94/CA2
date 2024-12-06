@@ -72,7 +72,7 @@ public class CA2 {
         Scanner input = new Scanner(System.in);
         
         //prompting the user to enter the multiplication table size 
-        System.out.println("Enter the number of rows and columns in table (Example: 5x5): ");
+        System.out.println("Enter the number of rows and columns in table (Example: 5x5/NxN): ");
         
         //variable to store the table size 
         int a = input.nextInt();
