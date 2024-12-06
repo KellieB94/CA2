@@ -226,6 +226,16 @@ public class CA2 {
         System.out.print("Enter number of columns: ");
         int col = input.nextInt();
         
+        //Matrix elements initialization 
+        int[][] square = new int [row][col];
+        System.out.println("Enter matrix elements: ");
+        
+        for(int a = 0; a < row; a++){
+            for(int b = 0; b < col; b++){
+                square[a][b] = input.nextInt();
+            }
+        }
+        
         }
 }
              
