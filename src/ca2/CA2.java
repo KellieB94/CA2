@@ -152,7 +152,7 @@ public class CA2 {
              primarySum += square[a][a];
              secondarySum += square[a][cols - a - 1];
          }
-         //output 
+         //output statements  
          System.out.println("Main diagonal sum: " + primarySum);
          System.out.println("Secondary diagonal sum: " + secondarySum);
 }
