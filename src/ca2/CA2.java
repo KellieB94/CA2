@@ -31,7 +31,7 @@ public class CA2 {
         //initializing the array 
         //int[] ray = new int [size];
         
-        //prompting the user to give array elements as input using for loop 
+        //prompting the user to give array elements as input using for loop, 
         //the for loop enables the user to input more than one element 
         //System.out.println("Enter the array elements: ");
         //for(int a = 0; a < size; a++){
@@ -41,7 +41,8 @@ public class CA2 {
         //boolean to find the first-repeated element in the array 
         //boolean Found = false;
         
-        //Array Traversal using two nested for-loops to scan through each array element to find the first-repeated element in the array
+        //Array Traversal using two nested for-loops, one running through the outer-loop and one running through the inner-loop,
+        //to scan through each array element to find the first-repeated element in the array
         //for(int a = 0; a < size; a++){
             //for(int b = a + 1; b < size; b++){
                 
@@ -86,15 +87,18 @@ public class CA2 {
                 mulTable[b][c] = (b + 1) * (c + 1);
             }
         }
-        //displaying the multiplication table in the form of a matrix 
+        //displaying the multiplication table in the form of a matrix,
+        //using two nested for-loops, one going through the outer-loop and one going through the inner-loop,
+        //to fill the array with the multiplication products 
         System.out.println("Multiplication Table: ");
         for(int b = 0; b < a; b++){
             for(int c = 0; c < a; c++){
-                //printing each element 
-                System.out.printf("%4d", mulTable[b][c]);
+                //printing each element in a size 3 alignment to make the table easier to read 
+                System.out.printf("%3d", mulTable[b][c]);
             }
             System.out.println();
         }
+        //closing the Scanner class to stop user input capability 
         input.close();
     }
     
